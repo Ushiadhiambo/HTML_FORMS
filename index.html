@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color: rgb(185, 185, 142);
+            
+        }
+        #submit_button{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            padding: 12px 6px;
+            border: none;
+            width: 90%;
+        }
+        #Name{
+            padding: 12px 6px;
+            width: 90%;
+        }
+        #Email{
+            padding: 12px 6px;
+            width: 90%;
+        }
+        #Password{
+            padding: 12px 6px;
+            width: 90%;
+        }
+        form{
+            border: 5px solid whitesmoke;
+            background-color: white;
+            width: 600px;
+            height: 700px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        .icon{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        gap:3cm ;
+    
+      }
+      a{
+        color: black;
+        text-decoration: none;
+      }
+      .hr-lines{
+  position: relative;
+  max-width: 500px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background:black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background:black;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  }
+      
+        
+    </style>
+    
+</head>
+<body>
+    <form> Already have an account? <a href="signin.html" style="color: black;"><b>Sign In</b></a> 
+        <br>
+        <h1>Sign Up</h1>
+        <br>
+        
+        <br>
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="Name" placeholder="Enter Name"/>
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="Email" placeholder="Enter Email"/>
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" id="Password" placeholder="Enter Password" required/>
+        <br>
+         <label>
+            <input type="checkbox" checked="checked" name="accept policies">"I've Read and Agree With <a href="The Terms of Services">The Terms of Services</a>And Our <a href="Policy Privacy">Privacy Policy</a>
+            <br>
+         </label> 
+          <br>
+        <br>
+        <button type="submit;" id="submit_button">Sign Up</button>
+
+            </button>
+            <br>
+            <h2 class="hr-lines">Or Sign in With</h2>
+            <br>
+            <div class="icon">
+                <a href="Google Link" class="fa fa-google fa-2x"></a>
+                <a href="FB Link" class="fa fa-facebook fa-2x"></a>
+            </div>
+ 
+        
+        
+
+
+    </form>
+</body>
+</html>
